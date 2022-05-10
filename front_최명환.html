@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>프런트엔드 개발자 지원서</title>
+<style>
+#container {	width:520px;
+         	border:1px solid black;
+		padding:20px 40px;
+		margin:0 auto;	
+        background-color: plum;
+    }
+ul {list-style-type: none;}
+li { line-height:30px;}
+h4{
+    color:red;
+}
+span{
+    color:yellow;
+}
+*{
+    font-family : 'GangwonEdu_OTFBoldA';
+}
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<h1>프런트엔드 개발자 지원서 </h1>
+<p><span>HTML, CSS, Javascript</span>에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+<hr>
+<form>
+ <h4>개인정보</h4>
+ <blockquote>
+    <label>이름 <input type = "text" placeholder = "공백없이 입력하세요"></label><br>
+    <label>연락처 <input type = "text"></label> 
+ </blockquote>
+    <h4>지원 분야</h4>
+    <blockquote>
+    <label><input type="radio"> 웹 퍼블리싱</label><br>
+    <label><input type="radio"> 웹 애플리케이션 개발</label><br>
+    <label><input type="radio"checked="checked"> 개발 환경 개선</label>
+    </blockquote>
+    <h4>지원 동기</h4>
+    <textarea cols="70px" rows = "6" placeholder = "본사 지원 동기를 간략히 써 주세요."></textarea><br>
+    <button type = "submit" value="submit">접수하기</button>
+    <button type = "reset" value = "reset">다시쓰기</button>
+</form>
+</body>
+</html>
