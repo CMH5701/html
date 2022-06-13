@@ -1,0 +1,61 @@
+﻿<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <tilte>flex</tilte>
+
+    <style>
+    .flexbox {
+        display: flex;
+        height: 80px;
+        border: solid 1px red;	
+    }
+    #container1 {  justify-content: flex-start;  } /*flxe start를 사용하면 박스이 첫번째 요소부터 정렬을 시작한다.*/
+    #container2 {  justify-content: flex-end;  }/*flex end를 사용하면 요소의 마지막 부터 정렬을 시작한다. */
+    #container3 {  justify-content: center;  } /*flex center를 사용하면 요소의 가운데에 정렬을  해준다*/
+    #container4 {  justify-content: space-between;  }/*space-between을 사용하면 요소 사이를 비운 상태로 요소를 정렬한다.*/
+    #container5 {  justify-content: space-around;  }/*양쪽 끝을 띄워준 후 요소 사이를 띄어준다.*/
+    .item1:first-child {
+	width: 20%;
+	height: 60px;
+	background-color: red;
+}
+.item2:nth-child(2) {
+	width: 20%;
+	height: 60px;
+	background-color: green;
+}
+.item3:nth-child(3) {
+	width: 20%;
+	height: 60px;
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+	<div class="flexbox" id="container1">
+  		<div class="item1"></div> 
+  		<div class="item2"></div> 
+  		<div class="item3"></div>
+	</div>
+	<div class="flexbox" id="container2">
+  		<div class="item1"></div> 
+  		<div class="item2"></div> 
+  		<div class="item3"></div>
+	</div>
+	<div class="flexbox" id="container3">
+  		<div class="item1"></div> 
+  		<div class="item2"></div>
+  		<div class="item3"></div>
+	</div>
+    <div class="flexbox" id="container4">
+        <div class="item1"></div> 
+        <div class="item2"></div> 
+        <div class="item3"></div>
+  </div>
+  <div class="flexbox" id="container5">
+        <div class="item1"></div> 
+        <div class="item2"></div> 
+        <div class="item3"></div>
+  </div>		
+</body>
+</html>
