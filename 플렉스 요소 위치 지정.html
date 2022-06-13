@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>align-self</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0px;
+      }
+      container {
+        height: 100vh;
+        background-color: #01579b;
+        display: flex;
+      }
+      .item {
+        padding: 20px;
+        }
+        .item:nth-child(1) {
+        background-color: pink;
+        align-self: flex-start; /*flex start를 주면 요소가 시작부분에 위치한다.*/
+        }
+        .item:nth-child(2) {
+         background-color: blue;
+         align-self: center;/*center을 주면 요소가 가운데 부분에 위치한다.*/
+        }
+        .item:nth-child(3) {
+        background-color: red; /*flex end를 주면 요소가 끝부분에 위치한다.*/
+        align-self: flex-end;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>
